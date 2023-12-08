@@ -9,7 +9,7 @@ import addPostReducer from "./addPostReducer"
 import updatePostReducer from "./updatePostReducer"
 import deletePostReducer from "./deletePostReducer"
 
-combineReducers(
+ export default combineReducers(
     {
         getPostsReducer,
         addPostReducer,
