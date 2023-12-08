@@ -1,3 +1,13 @@
+# Product Backlog 
+- Add in relevant api endpoint
+- Store enpoint in .env file
+- Add in typeScript
+- Add in good comments
+- Understand redux cycle 
+- Update styling with MUI and scss
+- Add in a graphQL qury 
+- Integrate with next.js
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
