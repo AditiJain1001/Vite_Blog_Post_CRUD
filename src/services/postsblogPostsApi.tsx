@@ -1,10 +1,11 @@
 import axios from "axios"
 
-//add in approiate endpoint
-const API_ENDPOINT = 'https://your-api-endpoint.com/posts';
+const API_ENDPOINT = process.env.BLOG_POSTS_API_ENDPOINT
+
+
 
 const getAll = async () => {
-    return axios.get(API_ENDPOINT);
+    return axios.get(`${API_ENDPOINT}/posts)`;
 };
 
 export default { getAll };
