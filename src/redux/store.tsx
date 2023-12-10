@@ -2,7 +2,8 @@
 import { legacy_createStore as createStore, applyMiddleware, compose, StoreEnhancer } from "redux";
 import rootReducer from "./reducers/index";
 import createSagaMiddleware from "redux-saga";
-import { getPostsSaga, addPostSaga, updatePostSaga, deletePostSaga } from "./sagas";
+import { getPostsSaga, } from "./sagas/";
+//import addPostSaga, updatePostSaga, deletePostSaga above
 
 // Extending the Window interface to include the Redux DevTools Extension
 declare global {
@@ -29,7 +30,7 @@ export const store = createStore(rootReducer, composedEnhancers);
 
 // Running the sagas, which listen for corresponding actions
 sagaMiddleware.run(getPostsSaga);
-sagaMiddleware.run(addPostSaga);
-sagaMiddleware.run(updatePostSaga);
-sagaMiddleware.run(deletePostSaga);
+// sagaMiddleware.run(addPostSaga);
+// sagaMiddleware.run(updatePostSaga);
+// sagaMiddleware.run(deletePostSaga);
 
