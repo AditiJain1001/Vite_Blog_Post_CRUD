@@ -1,0 +1,20 @@
+.blog-post {
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px; /* spacing between form elements */
+        width: 30rem
+    }
+    
+    &__input {
+        margin-bottom: 10px; /* spacing between input fields */
+    }
+    
+    &__actions {
+        display: flex;
+        // justify-content: flex-end;
+    }
+    
+}
+

@@ -1,4 +1,5 @@
-import { GET_POSTS } from "../actions/actionTypes";
+import {  SET_POSTS } from "../actions/actionTypes";
+// GET_POSTS
 
 const initialState = {
   posts: [],
@@ -6,7 +7,7 @@ const initialState = {
 
 const getPostsReducer = (state = initialState, action) => {
   switch (action.type) {
-    case GET_POSTS: {
+    case SET_POSTS: {
       return {
         ...state,
         posts: action.payload,
